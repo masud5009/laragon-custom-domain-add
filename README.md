@@ -7,7 +7,7 @@ C:\laragon\etc\apache2\sites-enabled\
 ```
 **2️⃣ Create a Virtual Host Configuration File :**
 
-Create a new .conf file (e.g., myproject.conf) inside sites-enabled and add the following content:
+Create a new `.conf` file `(e.g., myproject.conf)` inside `sites-enabled` and add the following content:
 ```plaintext
 define ROOT "D:/laragon/www/myproject/public"
 define SITE "myproject.test"
@@ -36,4 +36,14 @@ define SITE "myproject.test"
     SSLCertificateKeyFile   D:/laragon/etc/ssl/laragon.key
  
 </VirtualHost>
+```
+**3️⃣ Edit the Hosts File :**
+Open the `hosts` file using any code editor following this directory
+
+```plaintext
+C:\Windows\System32\drivers\etc\
+```
+Add the following line :
+```plaintext
+127.0.0.1 myproject.test
 ```
